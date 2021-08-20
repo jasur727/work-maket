@@ -425,12 +425,25 @@ form {
   margin-left: auto;
 }
 
-.btn-bottom {
-  border: none;
-  background-color: transparent;
-  margin-left: 257px;
+.about-wrapper__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 240px;
+  border: transparent;
   margin-bottom: 8px;
+  cursor: pointer;
 }
+
+.about-wrapper__btn:hover {
+  background-color: #3456AF;
+}
+
+
+.about-wrapper__btn:hover .about-card__btn-logo{
+  fill: #fff;
+}
+
 
 .about-card {
   max-width: 315px;
@@ -473,6 +486,7 @@ form {
   margin-left: 140px;
   border: transparent;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .about-card__btn:hover {
@@ -481,6 +495,7 @@ form {
 
 .about-card__btn-logo {
   padding: 8px;
+  margin-top: 5px;
   fill: #8D989D;
 }
 
