@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'HelveticaNeueCyr';
   src: url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-      url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+    url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'HelveticaNeueCyr';
   src: url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-      url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+    url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'HelveticaNeueCyr';
   src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-      url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -69,7 +69,7 @@ body {
 }
 
 .site-nav__link:hover {
-  color: #000000  ;
+  color: #000000;
 }
 
 
@@ -219,7 +219,10 @@ form {
   padding: 22px 35px;
   display: flex;
   white-space: nowrap;
+}
 
+.navigation-list__item:hover .navigation-list__link {
+  color: #fff;
 }
 
 .navigation-list__item:hover {
@@ -507,7 +510,7 @@ form {
   opacity: 0.5;
 }
 
-.hino-link:hover {
+.hino-item:hover .hino-link{
   color: #000000;
   opacity: 1;
 }
@@ -515,6 +518,7 @@ form {
 .hino-item {
   padding: 14px 77px 14px 16px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .hino-item:hover {
@@ -760,10 +764,6 @@ form {
   margin: 0;
 }
 
-.footer-form__btn {
-  white-space: nowrap;
-}
-
 .footer-form__input {
   padding: 12px 269px 12px 16px;
   border-radius: 8px;
@@ -785,11 +785,18 @@ form {
   line-height: 130%;
   color: #ffffff;
   padding: 12px 34px;
-  border: transparent;
+  border: 2px solid transparent;
   background-color: #3456AF;
   border-radius: 8px;
   margin-left: 8px;
+  white-space: nowrap;
   cursor: pointer;
+}
+
+.footer-form__btn:hover{
+  border: 2px solid #3456AF;
+  background-color: #fff;
+  color: #3456AF;
 }
 
 .site-footer__top-span {
